@@ -1,0 +1,16 @@
+<html>
+
+
+<body>
+<form method='post'>
+{%csrf_token%}
+{%for x in tap%}
+<p>{{x.name}}</p>
+
+{%endfor%}
+
+</form>
+</body>
+
+
+</html>

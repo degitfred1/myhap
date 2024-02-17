@@ -1,0 +1,17 @@
+<html>
+
+
+<body>
+<form method='post'>
+{%csrf_token%}
+{%for x in who%}
+<p>{{x.title}}</p>
+<p>{{x.time}}</p>
+{%endfor%}
+
+</form>
+</body>
+
+<p><a href='/create'>NEXT</a></p>
+
+</html>
